@@ -1,0 +1,41 @@
+/* src/app/component/Navbar/Navbar.module.css */
+
+.navbar {
+  /* height: 100px; */
+   /* position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(255,255,255,0.3);
+  */
+  top: 0;
+  position: absolute;
+  padding: 1rem;
+  right: 0%;
+
+}
+
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.wrapper span {
+  font-weight: bold;
+  margin: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.social img {
+  width: 18px;
+  height: 18px;
+}
