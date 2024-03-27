@@ -938,3 +938,7 @@ a {
     --tw-bg-opacity: 0.5;
   }
 }
+
+.prose {
+  padding: 20rem;
+}
