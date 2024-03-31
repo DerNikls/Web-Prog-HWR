@@ -2,14 +2,27 @@ FROM ubuntu:latest
 
 LABEL authors="Niklas Täge"
 
-FROM node:20-alpine
+# Use node 20 as the base image
+FROM node:20
 
-WORKDIR /usr/app
+# Set the working directory inside the container
+WORKDIR /app
 
-COPY ./ /usr/app
+# Copy package.json and package-lock.json (if exists) to the working directory
+COPY package.json ./
+COPY package-lock.json* ./
 
+# Install dependencies
 RUN npm install
 
+# Copy the rest of the application
+COPY . .
+
+# Build the Next.js application
 RUN npm run build
 
+# Expose the port Next.js is running on
+EXPOSE 3000
+
+# Run the Next.js application
 CMD ["npm", "start"]
