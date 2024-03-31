@@ -9,8 +9,8 @@ FROM node:20
 WORKDIR /app
 
 # Copy package.json and package-lock.json (if exists) to the working directory
-COPY package.json ./
-COPY package-lock.json* ./
+COPY package.json /app/
+COPY package-lock.json* /app/
 
 # Install dependencies
 RUN npm install
