@@ -4,9 +4,9 @@ LABEL authors="Niklas Täge"
 
 FROM node:20-alpine
 
-WORKDIR /app
+WORKDIR .
 
-COPY . /app/
+COPY . .
 
 RUN npm install
 
