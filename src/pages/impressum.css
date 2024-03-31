@@ -1,0 +1,58 @@
+/* src/pages/impressum.css */
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.impressumContainer {
+    background-image: url("../../public/image/ImpressumBG.jpg");
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.impressumText {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(8px);
+    padding: 4rem;
+    color: white;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    max-width: 800px; /* Limit the maximum width of the impressumText container */
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+}
+
+.impressumText h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.impressumText h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.impressumText p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.footerCon {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 2;
+    margin-top: auto;
+}

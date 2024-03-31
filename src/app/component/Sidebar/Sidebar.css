@@ -1,0 +1,65 @@
+
+/*
+This CSS file contains styles for the Sidebar component.
+*/
+
+
+/* Styling for the main container of the sidebar */
+/* Sets display to flex, align-items to center, justify-content to center, background-color to white, and text color to black */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: #000000;
+}
+
+/* Styling for the background overlay */
+/* Sets z-index to ensure it appears above other elements, position to fixed, and sets dimensions and background color */
+.sidebar .bg {
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 400px;
+  background: rgba(255, 255, 255, 0.65);
+}
+
+/* Styling for the links container */
+/* Sets position to absolute, dimensions to fill the parent, and flex layout properties */
+.sidebar .bg .links {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  letter-spacing: 0.2rem;
+}
+
+/* Styling for the individual links */
+/* Sets font size, text decoration, and color */
+.sidebar .bg .links a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* Styling for the toggle button */
+/* Sets position to fixed, dimensions, border radius, and background color */
+.sidebar button {
+  z-index: 999;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  top: 25px;
+  left: 25px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

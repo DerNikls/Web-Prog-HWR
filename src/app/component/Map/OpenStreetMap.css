@@ -1,0 +1,11 @@
+/*
+This CSS file contains styles for the OpenStreetMap component.
+*/
+
+/* Styling for the map container */
+/* Sets the width to 100%, height to 80vh, and border radius to 25px */
+.maps{
+    width: 100%;
+    height: 80vh;
+    border-radius: 25px;
+}

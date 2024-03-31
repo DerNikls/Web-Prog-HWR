@@ -1,0 +1,45 @@
+/*
+This CSS file contains styles for the Navbar component.
+*/
+
+/* Styling for the Navbar container */
+/* Sets position to absolute, top to 0, padding to 1rem, and right to 0% */
+.navbar {
+  top: 0;
+  position: absolute;
+  padding: 1rem;
+  right: 0%;
+}
+
+/* Styling for the wrapper container */
+/* Sets max-width to 1366px, margin to auto, display to flex, align-items to center, justify-content to space-between, and height to 100% */
+.wrapper {
+  max-width: 1366px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Styling for the title */
+/* Sets font-weight to bold, margin to 1rem, and letter-spacing to 0.2rem */
+.wrapper span {
+  font-weight: bold;
+  margin: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+/* Styling for the social media icons container */
+/* Sets display to flex and gap between child elements to 20px */
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+/* Styling for the social media icons */
+/* Sets width and height of the icons to 18px */
+.social img {
+  width: 18px;
+  height: 18px;
+}

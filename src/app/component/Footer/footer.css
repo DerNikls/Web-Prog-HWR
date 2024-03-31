@@ -1,0 +1,155 @@
+
+/*
+This CSS file contains styles for the Footer component.
+*/
+
+/* Styling for the main container of the footer */
+/* Sets the background color with some transparency */
+.footerComponent{
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Sub-footer container */
+/* Displays its children in a flex container and arranges them in a column */
+.subFooter{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Container for links */
+/* Displays its children in a flex container, distributing space between them and allowing wrapping */
+.subFooterLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 2rem;
+
+}
+
+/* Heading for each link section */
+/* Sets the font size, line height, and adds margin at the bottom */
+.subFooter h1{
+    font-size: 14px;
+    line-height: 17px;
+    margin-bottom: 0.9rem;
+}
+
+/* Styling for each individual link */
+/* Sets the font size, line height, margin, and changes cursor to pointer */
+.subFooterLinks p{
+    font-size: 12px;
+    line-height: 15px;
+    margin: 0.5rem 0;
+    cursor: pointer;
+}
+
+/* Container for each link section */
+/* Sets a fixed width, margin, and arranges children in a column */
+.subFooterLinksContainer{
+    width: 150px;
+    margin: 1rem;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    color: white;
+}
+
+/* Styling for links */
+/* Sets the color of links and removes underlines */
+.footerComponent .link {
+    color: rgb(206, 206, 206);
+    text-decoration: none;
+}
+
+/* Container below the links */
+/* Arranges its children in a row, distributing space between them */
+.subFooterBelow{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.2rem;
+}
+
+/* Copyright information */
+/* Sets the font size, line height, color, and font weight */
+.subFooterCopyright{
+    font-size: 13px;
+    line-height: 15px;
+    color: white;
+    font-weight: 600;
+}
+
+/* Additional links below the footer */
+/* Arranges its children in a row */
+.subFooterBelowLinks{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Additional links text */
+/* Sets the font size, line height, margin, color, and font weight */
+.subFooterLinksBelow p{
+    font-size: 13px;
+    line-height: 15px;
+    margin-left: 2rem;
+    color: white;
+    font-weight: 600;
+}
+
+/* Horizontal line */
+/* Sets the color of the line to white and width to 100% */
+.lineHR{
+    color: white !important;
+    width: 100%;
+}
+
+/* Media queries for responsive design */
+@media screen and (max-width: 850px){
+    /* Adjustments for smaller screens */
+    .subFooter-heading h1{
+        font-size: 44px;
+        line-height: 50px;
+    }
+}
+
+@media screen and (max-width: 550px){
+    /* Adjustments for smaller screens */
+    .subFooter-heading h1{
+        font-size: 34px;
+        line-height: 42px;
+    }
+
+    .subFooterLinks div{
+        margin: 1rem 0;
+    }
+
+    .subFooter-btn p{
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .subFooterBelow{
+        flex-direction: column;
+        justify-content: left;
+    }
+
+    .subFooterBelowLinks{
+        flex-direction: column;
+    }
+
+    .subFooterLinksBelow p{
+        margin-left: 0rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    /* Adjustments for smaller screens */
+    .subFooter-heading h1{
+        font-size: 27px;
+        line-height: 38px;
+    }
+}
